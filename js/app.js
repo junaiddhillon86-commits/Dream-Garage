@@ -4,6 +4,9 @@ const sidebar=document.getElementById("sidebar");
 const play=document.querySelector(".play");
 const hdr = document.getElementById('hdr');
 const mid=document.querySelector(".mid");
+const h4t=document.querySelector(".h4");
+const scroll=document.querySelector(".scroll");
+
 
 menubtn.addEventListener("click", () => {
     sidebar.classList.toggle('open');       // opens/closes the sidebar
@@ -38,4 +41,20 @@ else{
     document.body.classList.remove('mode2');
     hdr.classList.remove('mod2');
 }
+});
+window.addEventListener("scroll", () => {
+  const pos = h4t.getBoundingClientRect().top-190;
+  if (pos < window.innerHeight / 2) {
+    document.querySelector("#p").classList.add("show");
+    document.querySelector("#l").classList.add("show");
+  } else {
+    document.querySelector("#p").classList.remove("show");
+    document.querySelector("#l").classList.remove("show");
+  }
+})
+scroll.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });

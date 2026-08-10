@@ -1,0 +1,243 @@
+
+.home{
+    /* margin: 20px; */
+    padding-top: 20px;
+    padding-left: 35px;
+    font-size: 25px;
+}
+.home a{
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    font-weight: bold;
+    transition: transform 0.4s ease;
+}
+.home a:hover{
+    color: rgb(137, 136, 136);
+    transform: translateX(-10px) scale(1.05);
+}
+.c1{
+    height: 125vh;
+    width: 100%;
+    background-color: black;
+}
+.hd{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#h{
+font-weight: 600;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: #817979;
+  line-height: 1.15;
+  position: static; 
+  margin-left: 30px;
+  margin-bottom: 90px;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 29px;
+}
+.img1{
+    display: flex;
+    justify-content: center;
+}
+.img1 img{
+align-self: center;
+object-fit: cover;
+height: 40vh;
+width: 80%;
+border-radius: 10px;
+cursor: pointer;
+ transition: transform 0.4s ease;
+ border: 2px solid rgb(0, 0, 0);
+}
+.img1 img:hover{
+  transform: translateX(-10px) scale(1.05);
+}
+.ov{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: white;
+ 
+}
+
+.ov-item{
+  text-align: center;
+  padding: 25px 15px;
+  transition: transform 0.4s ease;
+}
+
+.ov-item i{
+  font-size: 30px;
+  margin-bottom: 15px;
+  
+}
+
+.ov-item h3{
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+
+.ov-item p{
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+}
+.ov-item:hover{
+ transform: translateX(-10px) scale(1.05);
+ color: azure;
+ background-color: #817979;
+ border-radius: 20px;
+}
+.c2{
+    height: 40vh;
+    width: 100%;
+    margin-top: 20px;
+}
+.h{
+    font-weight: bold;
+    font-size: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#a{
+    color: rgb(19, 0, 93);
+}
+.gallery{
+    min-height: 100vh;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.t1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.img-wrap{
+    position: relative;
+    flex: 1;
+    transition: flex 0.4s ease;
+}
+
+.t1:hover .img-wrap{
+    flex: 0.9rem;
+}
+
+.img-wrap:hover{
+    flex: 10rem;
+}
+
+.img-wrap img{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.img-wrap:hover img{
+    transform: scale(1.1);
+}
+
+.img-wrap p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+.t2{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+.immi{
+    position: relative;
+    flex: 1;
+}
+.immi img{
+     object-fit: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.4s ease;
+
+}
+.immi:hover img{
+    transform: scale(1.1);
+}
+.immi p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+.t3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 30px;
+}
+.bmw{
+    position: relative;
+    flex: 1;
+}
+.bmw img{
+     object-fit: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.bmw:hover img{
+   transform: scale(1.1);
+}
+.bmw p{
+     position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
