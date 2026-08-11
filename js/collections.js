@@ -1,5 +1,6 @@
 const gall=document.querySelector(".c1");
 const gal=document.querySelector(".h");
+const scrollup=document.querySelector(".scroll");
 
 window.addEventListener("scroll",()=>{
     const pos=gall.getBoundingClientRect().bottom;
@@ -14,4 +15,10 @@ window.addEventListener("scroll",()=>{
          document.body.style.backgroundColor="white";
     }
     
+})
+scrollup.addEventListener("click",()=>{
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 })
