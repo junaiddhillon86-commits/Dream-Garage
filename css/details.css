@@ -1,0 +1,108 @@
+
+.home{
+    /* margin: 20px; */
+    padding-top: 20px;
+    position: absolute;
+    left: 20px;
+    /* padding-left: 35px; */
+    font-size: 25px;
+}
+.home a{
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    font-weight: bold;
+    transition: transform 0.4s ease;
+}
+.home a:hover{
+    color: rgb(137, 136, 136);
+    transform: translateX(-10px) scale(1.05);
+}
+.hd{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    height: 40vh;
+    gap: 40px;
+}
+.hd p{
+    font-weight: bolder;
+    font-size: 100px;
+    color: azure;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+.cent{
+    height: 20vh;
+    background-color: rgb(86, 37, 37);
+    border-radius: 22px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 20px 20%;
+}
+.doors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1rem;
+    margin-top: 30px;
+    height: 60vh;
+}
+
+.door{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    isolation: isolate;
+    margin-top: 30px;
+}
+
+.door .name{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+/* light-sweep on hover, through the name */
+.door .name::after{
+    content: attr(data-text);
+    position: absolute; top: 0; left: 0; z-index: 2;
+    color: transparent;
+    background: linear-gradient(100deg, transparent 50%, rgba(72, 66, 255, 0.95) 100%, transparent 70%);
+    background-size: 250% 100%;
+    background-position: -150% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position .9s cubic-bezier(.2,.7,.2,1);
+    pointer-events: none;
+}
+.door:hover .name::after{ background-position: 150% 0; }
+
+.door .desc{
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7D8189;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+.door:hover .desc{ color: #800000; }
+
+.door .under{
+    position: absolute; left: 50%; bottom: -10px;
+    width: 0; height: 1px; background: #FF6B00;
+    transform: translateX(-50%);
+    transition: width 0.45s cubic-bezier(.2,.7,.2,1);
+}
+.door:hover .under{ width: 100%; }

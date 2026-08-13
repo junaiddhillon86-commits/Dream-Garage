@@ -308,6 +308,12 @@ body.mode2 {
   background-color: rgb(26, 41, 82);
   color: rgb(230, 210, 210);
 }
+.expl a{
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  color: orange;
+}
 
 /* #l.show,
 #p.show{

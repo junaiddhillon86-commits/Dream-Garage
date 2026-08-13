@@ -6,6 +6,7 @@ const hdr = document.getElementById('hdr');
 const mid=document.querySelector(".mid");
 const h4t=document.querySelector(".h4");
 const scroll=document.querySelector(".scroll");
+const explore=document.querySelector(".expl");
 
 
 menubtn.addEventListener("click", () => {
@@ -58,3 +59,6 @@ scroll.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+explore.addEventListener("click",()=>{
+  
+})
