@@ -1,0 +1,126 @@
+/* kill default browser margin/padding that causes the top gap */
+/*  */
+
+.top{
+    position: relative;
+}
+
+.vid{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* clip video properly, keep this here not on video */
+}
+
+.vid video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* don't use -1, it can slip behind body background/other elements */
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* above the video */
+    padding: 20px 40px;
+    display: flex;
+    gap: 650px;
+}
+.logo img{
+    height: 90px;
+    border-radius: 50%;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white; /* black text usually disappears over video, adjust as needed */
+    font-weight: bolder;
+    font-size: 30px;
+}
+.info{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.he{
+    display: flex;
+    font-size: 79px;
+    font-weight: bolder;
+    justify-content: center;
+    padding-top: 100px;
+}
+.germ{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.im img{
+    height: 250px;
+}
+.p{
+    width: 200px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.marquee-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    /* fades the edges so images appear/disappear smoothly */
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
+  }
+
+  .marquee-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    /* JS sets transform: translateX(...) on this element every frame */
+  }
+
+  .marquee-track img {
+    width: 420px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex: 0 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+/* .a:hover{
+  background-color: black;
+  color: white;
+}
+.cont:hover{
+   background-color: black;
+  color: white;
+} */
+#o:hover{
+background-color: black;
+  color: white;
+
+}
